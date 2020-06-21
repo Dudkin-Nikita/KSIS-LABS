@@ -18,7 +18,7 @@ namespace ClientHTTP
 
         const string httpServerURL = "http://localhost:9097/";
 
-        const int MaxOneFileSize = 20971520;        //20МБ
+        const int MaxOneFileSize = 5242880;        //5МБ
         const int MaxAllFilesSize = 52428800;       //50МБ
         List<string> AcceptableExtensions = new List<string>() { ".doc", ".docx", ".txt", ".pdf", ".jpeg", ".jpg", ".png" };
         public int commonSizeOfLoadedFiles = 0;
@@ -29,7 +29,7 @@ namespace ClientHTTP
             client = new HttpClient();
         }
 
-        MultipartFormDataContent PrepareFileContentToSending(string filePath)
+        ByteArrayContent PrepareFileContentToSending(string filePath)
         {
             FileStream inputFile = new FileStream(filePath, FileMode.Open);
             int amount = (int)inputFile.Length;
@@ -44,10 +44,9 @@ namespace ClientHTTP
             }
 
             var byteArrayContent = new ByteArrayContent(buffer);
-            var multipleDataContent = new MultipartFormDataContent();
-            multipleDataContent.Add(byteArrayContent);
-            return multipleDataContent;
+            return byteArrayContent;
         }
+
 
         public string CheckFileSizeAndExtension(string filePath)
         {
@@ -73,7 +72,7 @@ namespace ClientHTTP
             string fileName = Path.GetFileName(filePath);
             string fileExtension = Path.GetExtension(fileName);
             HttpRequestMessage httpLoadRequestMessage = new HttpRequestMessage(HttpMethod.Post, httpServerURL + fileName);
-            MultipartFormDataContent multipartFormDataContent = PrepareFileContentToSending(filePath);
+            ByteArrayContent multipartFormDataContent = PrepareFileContentToSending(filePath);
             httpLoadRequestMessage.Content = multipartFormDataContent;
             httpLoadRequestMessage.Headers.Add("RealFileName", fileName);
 
@@ -114,7 +113,7 @@ namespace ClientHTTP
                 return "Не удалось найти файл!";
             }
             else
-                return "Что-то пошло не так!";     
+                return "Что-то пошло не так!";
         }
 
         public async Task<string> GetFileInformation(int fileID)

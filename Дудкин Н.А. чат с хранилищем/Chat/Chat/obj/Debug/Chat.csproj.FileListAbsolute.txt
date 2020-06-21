@@ -56,3 +56,16 @@ E:\КСИС\Дудкин Н.А. чат — копия\Chat\Chat\bin\Debug\ChatCo
 E:\КСИС\Дудкин Н.А. чат — копия\Chat\Chat\bin\Debug\ChatCommoInfo.pdb
 E:\КСИС\Дудкин Н.А. чат — копия\Chat\Chat\obj\Debug\Chat.csproj.CopyComplete
 E:\КСИС\Дудкин Н.А. чат — копия\Chat\Chat\obj\Debug\Chat.csprojAssemblyReference.cache
+E:\КСИС\Дудкин Н.А. чат с хранилищем\Chat\Chat\bin\Debug\Chat.exe.config
+E:\КСИС\Дудкин Н.А. чат с хранилищем\Chat\Chat\bin\Debug\Chat.exe
+E:\КСИС\Дудкин Н.А. чат с хранилищем\Chat\Chat\bin\Debug\Chat.pdb
+E:\КСИС\Дудкин Н.А. чат с хранилищем\Chat\Chat\bin\Debug\ChatCommoInfo.dll
+E:\КСИС\Дудкин Н.А. чат с хранилищем\Chat\Chat\bin\Debug\ChatCommoInfo.pdb
+E:\КСИС\Дудкин Н.А. чат с хранилищем\Chat\Chat\obj\Debug\Chat.csprojAssemblyReference.cache
+E:\КСИС\Дудкин Н.А. чат с хранилищем\Chat\Chat\obj\Debug\Chat.MainForm.resources
+E:\КСИС\Дудкин Н.А. чат с хранилищем\Chat\Chat\obj\Debug\Chat.Properties.Resources.resources
+E:\КСИС\Дудкин Н.А. чат с хранилищем\Chat\Chat\obj\Debug\Chat.csproj.GenerateResource.cache
+E:\КСИС\Дудкин Н.А. чат с хранилищем\Chat\Chat\obj\Debug\Chat.csproj.CoreCompileInputs.cache
+E:\КСИС\Дудкин Н.А. чат с хранилищем\Chat\Chat\obj\Debug\Chat.csproj.CopyComplete
+E:\КСИС\Дудкин Н.А. чат с хранилищем\Chat\Chat\obj\Debug\Chat.exe
+E:\КСИС\Дудкин Н.А. чат с хранилищем\Chat\Chat\obj\Debug\Chat.pdb
